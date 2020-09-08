@@ -1,17 +1,16 @@
-class School 
-  
+class School
   attr_accessor :name, :roster
   
-  def initialize=(name)
-    @name=name
-    @roster={}
-  end
+  def initialize(name)
+    @name = name
+    @roster = {}
+  end 
   
-   def add_student(student, level)
-    
+  def add_student(student, level)
+  
     roster[level] ||= []
     roster[level] << student
-   end 
+  end 
   
   def grade(level)
     roster.detect do |x, y| 
@@ -20,7 +19,7 @@ class School
       end 
     end 
   end 
-end
+  
 
 def sort 
   nu_hash = {}
