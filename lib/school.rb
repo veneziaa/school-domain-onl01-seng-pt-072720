@@ -1,5 +1,5 @@
 class School 
-  attr_reader
+  attr_accessor
   
   @school
 end
