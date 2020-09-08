@@ -1,3 +1,5 @@
 class School 
+  
+  
   @school
 end
